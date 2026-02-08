@@ -43,8 +43,8 @@ function RechargePage() {
   }, []);
 
   function initiatePayment(amount, enteredNumber) {
-    //window.location.href = `/processing?number=${enteredNumber}&provider=${provider[selectedPlan]}&amount=${amount}`; //for upi
-    window.location.href = `https://papayawhip-cormorant-618106.hostingersite.com/payment_cashfree.php?amount=${amount}`; //for cashfree
+    window.location.href = `/processing?number=${enteredNumber}&provider=${provider[selectedPlan]}&amount=${amount}`; //for upi
+    // window.location.href = `https://papayawhip-cormorant-618106.hostingersite.com/payment_cashfree.php?amount=${amount}`; //for cashfree
   }
 
   function makePayment(amount) {
